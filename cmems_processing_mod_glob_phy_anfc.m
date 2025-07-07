@@ -13,13 +13,13 @@ lon_min = -110; lon_max = -80;
 credenciales = '.copernicusmarine-credentials';
 
 % === Carpeta de destino ===
-carpeta_destino = fullfile('Datasets', fecha_str, '\');
+carpeta_destino = fullfile('Datasets\globphy\', fecha_str, '\');
 if ~exist(carpeta_destino, 'dir')
     mkdir(carpeta_destino);
 end
 
 % === Verificar si el archivo ya existe y su tamaño ===
-nombre_destino = ['cmems_glo_phy_' fecha_str '.nc'];
+nombre_destino = ['cmems_glob_phy_' fecha_str '.nc'];
 ruta_destino = fullfile(carpeta_destino, nombre_destino);
 descargar = true;
 
