@@ -1,4 +1,5 @@
 Datasets/
 .copernicusmarine/
 .copernicusmarine-credentials
-copernicusmarine.exe
+*.exe
+*.ffs_db
