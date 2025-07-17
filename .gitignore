@@ -4,3 +4,4 @@ Datasets/
 *.exe
 *.nc
 *.ffs_db
+*.ffs_lock

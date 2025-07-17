@@ -210,7 +210,7 @@ end
 M=[];
 N=[];
 for i=1:1:length(pb)
-    if (pb(i,1)>-110) & (pb(i,1)<-80) & (pb(i,2)>5) & (pb(i,2)<20)
+    if (pb(i,1)>lon_min) & (pb(i,1)<lon_max) & (pb(i,2)>lat_min) & (pb(i,2)<lat_max)
         M(i,1)=pb(i,1);
         N(i,1)=pb(i,2);
     else
@@ -293,6 +293,7 @@ parfor kk = 1:length(time)
     close(hfig2);
 end
 % === Grafica del vector de velocidad de corrientes
+fprintf(1,'%s\n','Generando graficas de Vect_Vel');
 parfor kk = 1:length(time)
     % Extraer datos de velocidad de corrientes
     VEL = M_v(:,:,kk)';
@@ -334,6 +335,7 @@ parfor kk = 1:length(time)
     close(hfig3);
 end
 % === Gráfica de la altura de la superficie del mar
+fprintf(1,'%s\n','Generando graficas ZOS');
 parfor kk = 1:length(time)
     % Extraer datos de altura de la superficie del mar
     ZOS = zos(:,:,kk)';
