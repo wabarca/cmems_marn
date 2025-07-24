@@ -1,0 +1,11 @@
+Datasets/
+shapefiles/
+.vscode/
+.copernicusmarine/
+.copernicusmarine-credentials
+*.exe
+*.nc
+*.ffs_db
+*.ffs_lock
+*.py
+*.asv
